@@ -12,10 +12,17 @@
 <body>
     <header>
         <div class="head">20% de descuento en todos los productos!</div>
-        
+
         <div class="title"><img src="images/Logo.svg" alt="">Nombre Tienda</div>
+        <nav>
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </nav>
     </header>
-    <div class="cardContainer">
+    <!-- <div class="cardContainer">
         <div class="card">
             <img src="./images/batman1.svg" alt="batman" />
             <div class="textContainer">
@@ -48,7 +55,80 @@
                 <div><a href="#">Ver más</a></div>
             </div>
         </div>
+    </div> -->
+    <!-- Aca comienza el formulario -->
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Añadí tu super!</h2>
+            <h4>Agrega tu personaje favorito completando las opciones</h4>
+            <div class="name">
+                <div class="form-row">
+                    <label>Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="form-row">
+                    <label>Especie</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="name">
+                <div class="form-row">
+                    <label>Fecha</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-row" >
+                    <label>Agregar foto</label>
+                    <input type="file" >
+                </div>
+            </div>
+            <div class="name">
+                <div class="form-row">
+                    <!-- <label>Descripción</label> -->
+                    <input id="description" type="text">
+                </div>
+                <div class="list">
+                    <label>Poderes</label>
+                    <div>
+                        <input type="checkbox" id="volar" name="poderes" value="volar" >
+                        <label for="volar">Volar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="superinteligencia" name="poderes" value="superinteligencia" checked>
+                        <label for="superinteligencia">Superinteligencia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rayo-laser" name="poderes" value="rayo-laser">
+                        <label for="rayo-laser">Vista de rayo láser</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="billetera-gorda" name="poderes" value="billetera-gorda">
+                        <label for="billetera-gorda">Billetera gorda</label>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                        <label>Tipo de personaje:</label>
+                        <div>
+                            <input value="heroe" type="radio" >
+                            <label for="heroe">Héroe/Heroína</label>
+                        </div>
+                        <div>
+                            <input value="villano" type="radio">
+                            <label for="villano">Villano/Villana</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Añadir</button>
+        </div>
     </div>
+
+
+
+
+    <!-- Aca termina el formulario -->
+
     <footer>Todos los derechos reservados a FRONT END 1 Design by Gregory Galicio</footer>
 </body>
 
